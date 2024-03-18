@@ -222,11 +222,11 @@ const numArr2 = [-56, 45, -78, 46, -90, 89];
 function findMinNumber(arr) {
     return arr.reduce((minNum, item) => {
         if (item < minNum) {
-           return item; 
+            return item;
         } else {
             return minNum;
         }
-      
+
     }, arr[0])
 }
 
@@ -265,4 +265,44 @@ console.log(averageAge);
 /* 
 Напишите программу, которая использует метод reduce, чтобы найти наиболее часто встречающийся элемент
  в массиве строк. */
+
+const stringArr4 = ["apple", "banana", "apple", "banana", "banana", "orange", "apple", "apple"];
+
+const arrForElems = [];
+
+stringArr4.forEach((item) => {
+
+    const searchedItem = arrForElems.find(elem => elem.hasOwnProperty(item));
+
+    if (searchedItem) {
+        searchedItem[item]++;
+    } else {
+        const obj = {};
+        obj[item] = 1;
+        arrForElems.push(obj);
+    }
+});
+
+console.log(arrForElems);
+
+const quantityArr = [];
+const keysArr = [];
+
+arrForElems.forEach(item => {
+    quantityArr.push(...Object.values(item)); 
+    keysArr.push(...Object.keys(item)); 
+});
+
+console.log(quantityArr);
+const maxCount = Math.max(...quantityArr);
+console.log(maxCount);
+
+const indexOfsearchedItem = quantityArr.indexOf(maxCount);
+console.log(indexOfsearchedItem);
+const mostFrequent = keysArr[indexOfsearchedItem];
+
+
+
+console.log("Наиболее часто встречающийся элемент:", mostFrequent);
+
 
