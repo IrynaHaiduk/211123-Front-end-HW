@@ -289,8 +289,8 @@ const quantityArr = [];
 const keysArr = [];
 
 arrForElems.forEach(item => {
-    quantityArr.push(...Object.values(item)); 
-    keysArr.push(...Object.keys(item)); 
+    quantityArr.push(...Object.values(item));
+    keysArr.push(...Object.keys(item));
 });
 
 console.log(quantityArr);
@@ -304,5 +304,13 @@ const mostFrequent = keysArr[indexOfsearchedItem];
 
 
 console.log("Наиболее часто встречающийся элемент:", mostFrequent);
+
+
+const result = ["apple", "banana", "apple", "banana", "banana", "orange", "apple", "apple"].reduce(function (acc, el) {
+    acc[el] = (acc[el] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(result);
 
 
