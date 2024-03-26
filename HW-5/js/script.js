@@ -13,6 +13,8 @@ async function renderRandomUser() {
     createUser(userData);
 }
 
+
+
 async function getRandomUser(url) {
     try {
         const response = await fetch(url);
@@ -76,12 +78,11 @@ renderRandomcat();
 
 async function renderRandomcat() {
     catData = await getRandomCat(randomCatUrl);
-    console.log(catData);
     createCat(catData);
 }
 
 async function getRandomCat(url) {
- 
+
     try {
         const response = await fetch(url);
 
@@ -112,19 +113,19 @@ function createCat(data) {
     randomCatImage.classList.add("randomCat__img");
     randomCatImgBlock.append(randomCatImage);
 
-   const  randomCatIdBlock = document.createElement('p');
-   randomCatIdBlock.textContent = `Cats id: ${data.id}`;
-   randomCatInfoBlock.append(randomCatIdBlock);
+    const randomCatIdBlock = document.createElement('p');
+    randomCatIdBlock.textContent = `Cats id: ${data.id}`;
+    randomCatInfoBlock.append(randomCatIdBlock);
 
-   const randomCatNameBlock = document.createElement('p');
-   const randomCatName = getRandomName(catNamesArr);
-   randomCatNameBlock.textContent = `Cats name: ${randomCatName}`;
-   randomCatInfoBlock.append(randomCatNameBlock);
+    const randomCatNameBlock = document.createElement('p');
+    const randomCatName = getRandomName(catNamesArr);
+    randomCatNameBlock.textContent = `Cats name: ${randomCatName}`;
+    randomCatInfoBlock.append(randomCatNameBlock);
 }
 
 function getRandomName(namesArr) {
     const randomIndex = Math.floor(Math.random() * namesArr.length);
-    const randomName = namesArr[randomIndex]; 
+    const randomName = namesArr[randomIndex];
     return randomName;
 }
 
@@ -132,3 +133,32 @@ function getRandomName(namesArr) {
 с помощью OpenWeather API, включая описание и температуру. */
 
 
+let weatherData;
+const weatherUrl = "https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=39.099724&lon=-94.578331&dt=1643803200&appid=ba8185357306ed31322763eef4df535b";
+
+renderWeatherData();
+
+async function renderWeatherData() {
+    weatherData = await getWeatherData(weatherUrl);
+    //createWeatherData(weatherData);
+}
+
+async function getWeatherData(url) {
+
+    try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error;
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+        return data;
+
+    } catch (e) {
+        console.error('Request was not sent successfully', e);
+    }
+
+}
