@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    transition: all 1s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px;
+    width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.randomUser {
+    background-color: rgb(97, 97, 234);
+    padding: 35px;
+}
+
+.randomUser__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.randomUser__wrapper {
+    background-color: #ed5bba;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.randomUser__image {
+    width: 200px;
+    height: 200px;
+}
+
+.randomUser__image img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 15, 191);
+}
+
+.randomUser__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.randomUser__caption {
+    font-size: 30px;
+}
+
+.randomCat {
+    background-color: #39e076;
+    padding: 35px;
+}
+
+
+.randomCat__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.randomCat__block {
+    background-color: #4634cd;
+    border-radius: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.randomCat__image img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(244, 15, 217);
+}
+
+.randomCat__image {
+    margin-bottom: 30px;
+}
+
+.randomCat__info {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
