@@ -140,3 +140,144 @@ input[type='radio'].visually-hidden {
     flex-direction: column;
     gap: 20px;
 }
+
+.randomJoke {
+    background-color: #ca2323;
+    padding: 35px;
+}
+
+.randomJoke__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.randomJoke__block {
+    background-color: #4832e9;
+    border-radius: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    gap: 20px;
+    border: 2px solid violet;
+}
+
+.randomJoke__block blockquote q {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.randomJoke__block blockquote {
+    margin-bottom: 35px;
+}
+
+.bitcoin {
+    background-color: #2edc85;
+    padding: 35px;
+}
+
+.bitcoin__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.bitcoin__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.bitcoin__block {
+    background-color: #f46fdc;
+    border-radius: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    gap: 20px;
+    border: 2px solid rgb(203, 9, 9);
+}
+
+
+.quote {
+    background-color: #ead446;
+    padding: 35px;
+}
+
+.quote__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.quote__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.quote__block {
+    background-color: #11daec;
+    border-radius: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    gap: 20px;
+    border: 2px solid rgb(13, 230, 75);
+}
+
+
+.book {
+    background-color: #4672ea;
+    padding: 35px;
+}
+
+.book__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.book__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.book__block {
+    background-color: #2ad67a;
+    border-radius: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    gap: 20px;
+    border: 2px solid rgb(169, 248, 22);
+}
