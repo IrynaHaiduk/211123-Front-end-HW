@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 1s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1716px;
+    width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+header,
+footer {
+    background-color: #333331;
+    color: #fff;
+    text-align: center;
+    min-height: 50px;
+    padding: 30px;
+}
+
+main {
+    height: calc(100vh - 155px);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #333331;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow-y: scroll;
+
+    .example::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+   
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.modal {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.modal__wrap {
+    background-color: #fff;
+    color: black;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    padding: 27px 33px 153px;
+    position: relative;
+}
+
+.modal__title {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    margin-bottom: 15px;
+}
+
+body.modal-active {
+    position: fixed;
+    width: 100%;
+}
+
+body.modal-active .modal {
+    display: flex;
+}
+
+.modal__item {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 27px 24px 15px;
+}
+
+.modal__item:not(:last-child) {
+    margin-bottom: 34px;
+}
+
+.modal__container:not(:last-of-type) {
+    border-bottom: 1px solid black;
+}
+
+.modal__container {
+    display: grid;
+    grid-template-columns: 103px 1fr;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.modal__caption {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+}
+
+.modal__close {
+    width: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.modal__close img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
