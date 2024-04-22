@@ -78,7 +78,7 @@ h1 {
     cursor: pointer;
 }
 
-.modal {
+.modal, .modal_2 {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     position: fixed;
@@ -87,14 +87,7 @@ h1 {
     top: 0;
     left: 0;
     display: none;
-    overflow-y: scroll;
-
-    .example::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-   
+    overflow-y: scroll;  
 }
 
 .modal::-webkit-scrollbar {
@@ -130,7 +123,7 @@ body.modal-active {
     width: 100%;
 }
 
-body.modal-active .modal {
+.active {
     display: flex;
 }
 
