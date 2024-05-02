@@ -1,0 +1,40 @@
+.header {
+    background-color: #E4019A;
+    padding: 8px 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 1376px;
+    padding: 0 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.header__logo {
+    width: 83px;
+    flex-shrink: 0;
+}
+
+.header__logo img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 25px
+}
+
+.navbar__link {
+    text-transform: uppercase;
+}
+
+.navbar__link:hover {
+    color: #000;
+}

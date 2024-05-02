@@ -1,0 +1,20 @@
+.posts {
+    padding: 46px 0;
+}
+
+.posts__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 82px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.31px;
+}
+
+.posts__list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
