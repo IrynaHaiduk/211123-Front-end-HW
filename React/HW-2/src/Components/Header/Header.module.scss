@@ -1,0 +1,32 @@
+.header {
+    background-color: #333331;
+    color: #fff;
+    padding: 12px 0;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+}

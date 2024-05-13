@@ -9,6 +9,7 @@ const Posts = () => {
 
     return (
         <>
+        
             <section className={classes.posts}>
                 <div className={classes.container}>
                     <h2 className={classes.posts__title}>POSTS</h2>

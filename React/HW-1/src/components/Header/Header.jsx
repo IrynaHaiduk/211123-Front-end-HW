@@ -17,7 +17,7 @@ const Header = () => {
                         {
                             menu && menu.map((item, index) =>
                                 <li className={classes.navbar__item} key={index}>
-                                    <a href="#" className="navbar__link">
+                                    <a href="#" className={classes.navbar__link}>
                                         {item}
                                     </a>
                                 </li>

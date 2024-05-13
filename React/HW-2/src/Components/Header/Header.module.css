@@ -1,0 +1,27 @@
+.header {
+  background-color: #333331;
+  color: #fff;
+  padding: 12px 0;
+}
+.header__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}/*# sourceMappingURL=Header.module.css.map */

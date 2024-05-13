@@ -1,0 +1,8 @@
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar__link:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=Navbar.module.css.map */

@@ -1,0 +1,69 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.modal::-webkit-scrollbar {
+  display: none;
+}
+.modal__wrap {
+  background-color: #fff;
+  color: black;
+  border-radius: 8px;
+  width: 600px;
+  margin: auto;
+  padding: 27px 33px 153px;
+  position: relative;
+}
+.modal__title {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  margin-bottom: 15px;
+}
+.modal__item {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 27px 24px 15px;
+}
+.modal__item:not(:last-child) {
+  margin-bottom: 34px;
+}
+.modal__container {
+  display: grid;
+  grid-template-columns: 103px 1fr;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.modal__container:not(:last-of-type) {
+  border-bottom: 1px solid black;
+}
+.modal__caption {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+.modal__close {
+  width: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+.modal__close img {
+  display: block;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=Modal.module.css.map */
