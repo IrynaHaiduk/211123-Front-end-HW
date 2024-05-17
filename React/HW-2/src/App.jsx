@@ -3,6 +3,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Button from './Components/Button/Button';
 import ModalSection from './Components/ModalSection/ModalSection';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 
@@ -11,7 +12,11 @@ function App() {
     <>
       <Header />
       <main>
-        <ModalSection/>
+        <section>
+          <div className="container">
+            <Outlet />
+          </div>
+        </section>
       </main>
       <Footer />
     </>

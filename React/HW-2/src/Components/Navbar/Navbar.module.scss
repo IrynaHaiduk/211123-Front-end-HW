@@ -9,5 +9,19 @@
         &:hover {
             opacity: 0.6;
         }
+
+        
+    }
+
+    &__container {
+        color: green;
+    }
+
+    .active {
+        color: red;
+    }
+
+    &__linkActive {
+        color: red;
     }
 }

@@ -1,34 +1,43 @@
 import React from 'react';
 import classes from "./Navbar.module.scss";
+import { Link, NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 
 const Navbar = () => {
+    /* 
+        const setActiveLink = ({ isActive }) =>
+            classNames(classes.navbar__link, { [classes.navbar__linkActive]: isActive }); */
+
+    const setActiveLink = ({ isActive }) => isActive ? classNames(classes.navbar__link, classes.navbar__linkActive) :
+        classNames(classes.navbar__link);
+
     return (
         <nav className={classes.navbar}>
             <ul className={classes.navbar__list}>
                 <li className={classes.navbar__item}>
-                    <a href="" className={classes.navbar__link}>
+                    <NavLink to={`/`} className={setActiveLink}>
                         Главная
-                    </a>
+                    </NavLink>
                 </li>
                 <li className={classes.navbar__item}>
-                    <a href="" className={classes.navbar__link}>
+                    <NavLink to={`/about`} className={setActiveLink}>
                         О компании
-                    </a>
+                    </NavLink>
                 </li>
                 <li className={classes.navbar__item}>
-                    <a href="" className={classes.navbar__link}>
+                    <NavLink to={`/modal`} className={setActiveLink}>
+
                         Модалки
-                    </a>
+                    </NavLink>
                 </li>
                 <li className={classes.navbar__item}>
-                    <a href="" className={classes.navbar__link}>
-                        Контакты
-                    </a>
+                    <NavLink to={`/contacts`} className={setActiveLink}>
+                    </NavLink>
                 </li>
                 <li className={classes.navbar__item}>
-                    <a href="" className={classes.navbar__link}>
+                    <NavLink to={`/partners`} className={setActiveLink}>
                         Партнеры
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
 
