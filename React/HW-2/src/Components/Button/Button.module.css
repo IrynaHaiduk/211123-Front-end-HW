@@ -1,8 +1,7 @@
 .button {
   background-color: #333331;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 8px;
-  cursor: pointer;
+  border: none;
 }/*# sourceMappingURL=Button.module.css.map */

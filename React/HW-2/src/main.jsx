@@ -9,25 +9,7 @@ import PartnersPage from './pages/PartnersPage/PartnersPage';
 import AboutPage from './pages/AboutPage/AboutPage.jsx';
 import HomePage from './pages/HomePage/HomePage.jsx';
 
-/* {
-  path: "/",  //homepage
-  element: <App />,
-  errorElement: <ErrorPage />,
-  children: [
-    {
-      path: "/",
-      element: <HomePage />,//mainPage
-    },
-    {
-      path: "/register",
-      element: <RegisterPage />,
-    },
-    {
-      path: "/feed",
-      element: <PostsList />,
-    },
-  ]
-}, */
+
 
 const router = createBrowserRouter([
   {

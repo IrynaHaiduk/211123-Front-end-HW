@@ -5,4 +5,13 @@
 }
 .navbar__link:hover {
   opacity: 0.6;
+}
+.navbar__container {
+  color: green;
+}
+.navbar .active {
+  color: red;
+}
+.navbar__linkActive {
+  color: red;
 }/*# sourceMappingURL=Navbar.module.css.map */
